@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.Todos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Todos .column {
+    width: 40%;
+}
+
+.droppable-col {
+    width: 100%;
+    background-color: gray;
+    padding: 10px 10px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.item.dragging {
+    background-color: rgb(92, 129, 161);
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.addTodo{
+    margin: 20px;
+}
